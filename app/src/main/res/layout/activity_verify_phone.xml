@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="common.VerifyPhoneActivity">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:id="@+id/btn_cancel_action"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_cancel"
+        android:onClick="moveToSignUp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/acme"
+        android:text="Verify Phone Number"
+        android:textColor="#000000"
+        android:textSize="40dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_otp_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/acme"
+            android:text="Enter One Time Password sent on "
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/tv_verify_phone"
+            android:layout_below="@+id/tv_otp_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/acme"
+            android:text="+911234567890"
+            android:textSize="24dp" />
+
+
+    </RelativeLayout>
+
+    <com.chaos.view.PinView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemCount="6"
+        app:itemWidth="50dp"
+        app:itemHeight="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        app:lineColor="#000000"
+        android:itemBackground="#B1C0CF"
+        style="@style/PinWidget.PinView"
+        android:inputType="number"
+        android:cursorVisible="true"
+        app:cursorColor="#000000"
+        app:hideLineWhenFilled="true"
+        app:itemRadius="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:text="verify"
+        android:textSize="24sp"
+        android:fontFamily="@font/acme"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_textview_heading"
+        android:padding="5dp"/>
+
+</LinearLayout>

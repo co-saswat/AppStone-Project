@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_news"
+        android:title="News"
+        android:icon="@drawable/health_news_feed"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_list_of_doctor"
+        android:title="List of Specialist Doctor"
+        android:icon="@drawable/menu_doctor"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_health_files"
+        android:title="Health Reports"
+        android:icon="@drawable/menu_medical_record"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_invoice"
+        android:title="Invoice Bill"
+        android:icon="@drawable/menu_invoice"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_what_we_treat"
+        android:title="What we treat"
+        android:icon="@drawable/menu_what_we_treat"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_contact_us"
+        android:title="Contact Us"
+        android:icon="@drawable/menu_contact_us"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_about_us"
+        android:title="About Us"
+        android:icon="@drawable/menu_about_us"
+        android:iconTint="@color/colorBlack"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_logout"
+        android:title="Logout"
+        android:icon="@drawable/menu_logout"
+        app:showAsAction="always"/>
+
+</menu>

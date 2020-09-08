@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Telemedico</string>
+
+    <string-array name="symptoms_name">
+        <item>Fever</item>
+        <item>Cough</item>
+        <item>Hairfall</item>
+        <item>Diabetes</item>
+        <item>Acne</item>
+        <item>Weight Loss</item>
+        <item>Depression</item>
+        <item>Throat Pain</item>
+        <item>Stomach Ache</item>
+        <item>Constipation</item>
+        <item>Acidity</item>
+        <item>Back Pain</item>
+    </string-array>
+
+    <string-array name="blood_group">
+        <item>A+</item>
+        <item>AB+</item>
+        <item>B+</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>AB-</item>
+        <item>B-</item>
+        <item>O-</item>
+    </string-array>
+</resources>
