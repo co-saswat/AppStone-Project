@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context="common.LoginActivity">
+    tools:context=".view.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,10 +68,11 @@
                     android:padding="30dp">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id=""
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Enter Username"
+                        android:hint="Enter Email"
                         app:boxStrokeColor="#000000"
                         app:boxStrokeWidthFocused="2dp"
                         app:endIconMode="clear_text"
@@ -81,6 +82,7 @@
                         app:startIconTint="#000000">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_mail"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/acme"
@@ -103,6 +105,7 @@
                         app:startIconTint="#000000">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
@@ -129,12 +132,14 @@
                             android:textColor="#000000" />
 
                         <Button
+                            android:id="@+id/et_forgottenPassword"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentEnd="true"
                             android:background="#00000000"
                             android:fontFamily="@font/acme"
                             android:text="Forget Password"
+                            android:onClick="Forgetpassword"
                             android:textColor="#000000" />
                     </RelativeLayout>
 
@@ -145,12 +150,14 @@
                         android:elevation="30dp">
 
                         <Button
+                            android:id="@+id/btn_login"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/bg_textview_heading"
                             android:fontFamily="@font/acme"
                             android:padding="5dp"
                             android:text="Login"
+                            android:onClick="btnLoginClick"
                             android:textSize="20sp" />
                     </RelativeLayout>
 
@@ -160,13 +167,13 @@
                         android:layout_marginTop="20dp">
 
                         <Button
-                            android:id="@+id/btn_move_to_signup"
+                            android:id="@+id/et_for_signUp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/bg_textview_heading"
                             android:fontFamily="@font/acme"
-                            android:onClick="moveToSignUp"
                             android:text="New User ? SignUp"
+                            android:onClick="SignUp"
                             android:textSize="20sp"
                             android:transitionName="transition_sign_up" />
                     </LinearLayout>

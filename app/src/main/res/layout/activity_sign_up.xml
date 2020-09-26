@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
     android:transitionName="transition_sign_up"
-    tools:context="common.SignUpActivity">
+    tools:context=".view.SignUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,6 +30,7 @@
                 android:textStyle="bold" />
 
         </RelativeLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -83,47 +84,47 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
 
-                <com.hbb20.CountryCodePicker
-                    android:id="@+id/country_code"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/black_border"
-                    android:padding="5dp"
-                    app:ccp_autoDetectCountry="true"
-                    app:ccp_showFlag="true"
-                    app:ccp_showPhoneCode="true" />
+                       <com.hbb20.CountryCodePicker
+                               android:id="@+id/country_code"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerVertical="true"
+                               android:layout_marginEnd="5dp"
+                               android:background="@drawable/black_border"
+                               android:padding="5dp"
+                               app:ccp_autoDetectCountry="true"
+                               app:ccp_showFlag="true"
+                               app:ccp_showPhoneCode="true" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/til_signup_phone"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toEndOf="@+id/country_code"
-                    android:hint="Phone Number"
-                    app:boxStrokeColor="#000000"
-                    app:boxStrokeWidthFocused="2dp"
-                    app:endIconMode="clear_text"
-                    app:endIconTint="#000000"
-                    app:hintTextColor="#000000"
-                    app:startIconDrawable="@drawable/ic_phone"
-                    app:startIconTint="#000000">
+                           <com.google.android.material.textfield.TextInputLayout
+                               android:id="@+id/til_signup_phone"
+                               style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_toEndOf="@+id/country_code"
+                               android:hint="Phone Number"
+                               app:boxStrokeColor="#000000"
+                               app:boxStrokeWidthFocused="2dp"
+                               app:endIconMode="clear_text"
+                               app:endIconTint="#000000"
+                               app:hintTextColor="#000000"
+                               app:startIconDrawable="@drawable/ic_phone"
+                               app:startIconTint="#000000">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/acme"
-                        android:textColor="#000000" />
+                               <com.google.android.material.textfield.TextInputEditText
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:fontFamily="@font/acme"
+                                   android:textColor="#000000" />
 
-                </com.google.android.material.textfield.TextInputLayout>
+                           </com.google.android.material.textfield.TextInputLayout>
 
 
-            </RelativeLayout>
+                       </RelativeLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_signup_password"
@@ -233,20 +234,24 @@
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
                 android:background="@drawable/bg_textview_heading"
                 android:fontFamily="@font/acme"
                 android:onClick="submitSignUp"
-                android:text="Submit"
                 android:textSize="20sp"
+                android:text="Sing Up"
                 android:transitionName="transition_sign_up" />
         </LinearLayout>
 
@@ -254,3 +259,4 @@
     </LinearLayout>
 
 </ScrollView>
+

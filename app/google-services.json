@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "406153796486",
+    "firebase_url": "https://telemedico-595d9.firebaseio.com",
+    "project_id": "telemedico-595d9",
+    "storage_bucket": "telemedico-595d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406153796486:android:b22b61512645b683dfaa07",
+        "android_client_info": {
+          "package_name": "com.anshutiwari.telemedico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406153796486-ue1coeb452jobt7uoc1agmfanatvdnq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8JVsba53n-gBGHvma5m3METy7EjRADYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406153796486-ue1coeb452jobt7uoc1agmfanatvdnq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

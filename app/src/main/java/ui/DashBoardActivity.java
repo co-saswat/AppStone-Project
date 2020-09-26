@@ -18,6 +18,8 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.anshutiwari.telemedico.R;
+import com.anshutiwari.telemedico.view.ListOfDiesaseActivity;
+import com.anshutiwari.telemedico.view.ListOfDocActivity;
 import com.google.android.material.navigation.NavigationView;
 
 import org.json.JSONArray;
@@ -188,11 +190,11 @@ public class DashBoardActivity extends AppCompatActivity implements NavigationVi
                 break;
 
             case R.id.action_list_of_doctor:
-                Toast.makeText(DashBoardActivity.this, "Move to List of Doctor activity", Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(getApplicationContext(), ListOfDocActivity.class));
                 break;
 
             case R.id.action_health_files:
-                Toast.makeText(DashBoardActivity.this, "Move to Check your health record", Toast.LENGTH_SHORT).show();
+               startActivity(new Intent(getApplicationContext(), ListOfDiesaseActivity.class));
                 break;
 
             case R.id.action_invoice:

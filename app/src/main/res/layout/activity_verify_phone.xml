@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context="common.VerifyPhoneActivity">
+    tools:context=".view.VerifyPhoneActivity">
 
     <ImageView
         android:layout_width="40dp"
@@ -40,7 +40,31 @@
             android:text="Enter One Time Password sent on "
             android:textSize="24dp" />
 
-        <TextView
+        <EditText
+            android:layout_below="@+id/tv_otp_heading"
+            android:id="@+id/editTextMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:digits="0123456789"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:hint="enter your mobile number"
+            android:inputType="phone"
+            android:maxLength="10"/>
+
+        <Button
+            android:id="@+id/buttonContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextMobile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#cdd8f1"/>
+        <!--<TextView
             android:id="@+id/tv_verify_phone"
             android:layout_below="@+id/tv_otp_heading"
             android:layout_width="wrap_content"
@@ -49,12 +73,48 @@
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/acme"
             android:text="+911234567890"
-            android:textSize="24dp" />
+            android:textSize="24dp" />  !-->
 
 
     </RelativeLayout>
 
-    <com.chaos.view.PinView
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="10dp"
+        android:hint="enter verification code"
+        android:inputType="phone"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#cdd8f1" />
+
+   <!--- <com.chaos.view.PinView
+        android:id=""
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:itemCount="6"
@@ -80,6 +140,6 @@
         android:fontFamily="@font/acme"
         android:layout_gravity="center"
         android:background="@drawable/bg_textview_heading"
-        android:padding="5dp"/>
+        android:padding="5dp"/>   !-->
 
 </LinearLayout>
